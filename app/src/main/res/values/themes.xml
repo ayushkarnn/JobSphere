@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JobUpdates" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.JobUpdates" parent="Base.Theme.JobUpdates" />
+
+
+        <style name="CustomBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+            <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+        </style>
+
+        <style name="CustomBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+            <item name="android:background">@android:color/transparent</item>
+        </style>
+
+
+
+    <style name="SpinnerStyle">
+        <item name="android:textColor">@color/awui_red1</item>
+        <item name="background">@drawable/bg_spinner</item>
+    </style>
+
+</resources>

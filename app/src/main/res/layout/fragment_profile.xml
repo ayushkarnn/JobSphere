@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/awui_custom_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/interbold"
+        android:text="Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_white_simple2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        app:civ_border_width="2dp"
+                        android:src="@mipmap/ic_launcher_round"
+                        app:civ_border_color="@color/awui_red1" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:padding="7dp"
+                        android:src="@color/awui_custom_variant_blue_2" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ayush Karn"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/intermedium"
+                        android:textColor="@color/awui_blue1"/>
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ayushkarnn@gmail.com"
+                        android:textSize="12sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/interrregular"
+                        android:textColor="@color/awui_black_var_1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/importantInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="Important Info"
+                    android:fontFamily="@font/intermedium"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="10sp"
+                    android:background="@drawable/background_white_rounded_small_gray_shadow"
+                    android:textColor="@color/awui_custom_black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Date Registered: 12/12/2022"
+                    android:textSize="14sp"
+                    android:maxLines="4"
+                    android:visibility="gone"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/intermedium"
+                    android:textColor="@color/awui_black_var_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/logoutButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Logout"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:background="@drawable/background_blue_rounded_radius_small_x"
+                        tools:ignore="TooManyViews" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/reportBugButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Report Bug Or Feature"
+                        android:textAllCaps="false"
+                        android:textColor="@color/awui_blue1"
+                        android:textSize="14sp"
+                        android:background="@drawable/background_white_rounded_small_blue_shadow"
+                        tools:ignore="TooManyViews" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/awui_gray1_ligth3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/intermedium"
+                    android:paddingVertical="7dp"
+                    android:visibility="gone"
+                    android:paddingHorizontal="10sp"
+                    android:background="@drawable/background_white_rounded_small_gray_shadow"
+                    android:textColor="@color/awui_custom_black"/>
+                <TextView
+                    android:id="@+id/supportBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Support By Sharing App"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/intermedium"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="10sp"
+                    android:background="@drawable/background_white_rounded_small_gray_shadow"
+                    android:textColor="@color/awui_custom_black"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Verified"
+            android:textSize="12sp"
+            android:layout_margin="15dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/intermedium"
+            android:paddingVertical="5dp"
+            android:visibility="gone"
+            android:paddingHorizontal="10sp"
+            android:background="@drawable/background_blue_rounded_radius_small_x"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

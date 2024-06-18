@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/awui_custom_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/background_white_simple2"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/companyImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="5dp"
+            android:src="@color/awui_custom_variant_blue_2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationY="-15dp"
+            android:background="@drawable/background_white_rouded_white_top_small"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha=".7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_company"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:translationY="1dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/companyNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google"
+                    android:textSize="13sp"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/awui_black_var_1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jobTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Development Enginner"
+                android:textSize="17sp"
+                android:fontFamily="@font/intersemibold"
+                android:textColor="@color/awui_black_var_1"/>
+
+            <TextView
+                android:id="@+id/jobLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bengaluru, India"
+                android:layout_marginVertical="5dp"
+                android:textSize="12sp"
+                android:alpha=".4"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:fontFamily="@font/intermedium"
+                android:textColor="@color/awui_black_var_1"/>
+
+            <TextView
+                android:id="@+id/batchEligibleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch Eligible 2024/25/26"
+                android:layout_marginVertical="2dp"
+                android:textSize="14sp"
+                android:alpha=".4"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:fontFamily="@font/intermedium"
+                android:textColor="@color/awui_black_var_1"/>
+
+            <TextView
+                android:id="@+id/salaryRangeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary Range: ₹10,000 - ₹20,000"
+                android:layout_marginVertical="10dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/intermedium"
+                android:textColor="@color/awui_black_var_1"/>
+
+            <TextView
+                android:id="@+id/openingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:layout_marginVertical="5dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/intermedium"
+                android:textColor="@color/awui_green1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha=".7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:translationY="1dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/datePostedTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date Posted: 2023-01-01"
+                    android:paddingStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/awui_black_var_1"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/SaveImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/bookmark"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:translationY="1dp"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="10dp" />
+
+                <ImageView
+                    android:id="@+id/ShareImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:translationY="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
