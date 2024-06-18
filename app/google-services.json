@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738701111856",
+    "project_id": "offcampusupdatesapp",
+    "storage_bucket": "offcampusupdatesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738701111856:android:06609e7507225a98d8b3f5",
+        "android_client_info": {
+          "package_name": "com.app.jobupdt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZCZXkFGX6Udhdk54WNA7ePxXSUJp6Zug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

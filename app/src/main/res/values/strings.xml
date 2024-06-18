@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Job Sphere</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_onboarding_1">Easy Apply for Jobs</string>
+    <string name="description_onboarding_1">Apply for jobs effortlessly with our streamlined application process. Land your next job quickly and easily.</string>
+
+    <string name="title_onboarding_2">No Ads, Just Opportunities</string>
+    <string name="description_onboarding_2">Enjoy an ad-free experience while you search for your dream job. Focus on opportunities without distractions.</string>
+
+    <string name="title_onboarding_3">Real-Time Notifications</string>
+    <string name="description_onboarding_3">Receive instant notifications for new job postings. Be the first to apply and stay ahead in the competitive job market.</string>
+
+
+    <string name="start_text_advice">By continuing on this application you agree to our\n  <font color="#000080">Terms of Use</font> and <font color="#000080">Privacy Policy</font></string>
+
+    <string name="start">start</string>
+    <string name="skip">Skip</string>
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+</resources>
